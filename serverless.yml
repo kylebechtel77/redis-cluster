@@ -1,0 +1,14 @@
+service: serverless-redis
+frameworkVersion: '2'
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+
+
+
+functions:
+  hello:
+    handler: handler.hello
+  # you must have this running in a VPC with the redis cluster
+
